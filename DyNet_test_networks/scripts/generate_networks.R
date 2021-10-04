@@ -16,7 +16,7 @@ for (i in 1:10){
   names(elTest)[2]<-'node2'
   write.table(elTest,paste0('../data/','DyNetTest_','small_','0',i,'.csv'),sep=',', row.names = F,col.names = T,quote = F)
   #read into cytoscape to test - comment otu below
-  #createNetworkFromIgraph(testDynet, title=paste0('testnet',i))
+  createNetworkFromIgraph(testDynet, title=paste0('testnet',i))
 }
 
 # Erdos-Renyi graphs of 500 nodes and 900 edges
